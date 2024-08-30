@@ -1,6 +1,9 @@
 package ac.grim.grimac.api;
 
+import ac.grim.grimac.api.mod.UserMod;
+
 import java.util.Collection;
+import java.util.List;
 import java.util.UUID;
 
 public interface GrimUser {
@@ -10,6 +13,8 @@ public interface GrimUser {
     UUID getUniqueId();
 
     String getBrand();
+
+    List<UserMod> getModList();
 
     int getTransactionPing();
 
@@ -34,4 +39,5 @@ public interface GrimUser {
      * @param runnable
      */
     void runSafely(Runnable runnable);
+
 }
