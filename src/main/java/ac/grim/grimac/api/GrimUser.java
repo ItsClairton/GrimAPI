@@ -1,12 +1,15 @@
 package ac.grim.grimac.api;
 
 import ac.grim.grimac.api.mod.UserMod;
+import org.bukkit.entity.Player;
 
 import java.util.Collection;
 import java.util.List;
 import java.util.UUID;
 
 public interface GrimUser {
+
+    Player getPlayer();
 
     String getName();
 
