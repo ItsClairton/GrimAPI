@@ -8,6 +8,8 @@ public interface AbstractCheck {
 
     String getConfigName();
 
+    String getDescription();
+
     double getViolations();
 
     double getDecay();
